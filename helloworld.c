@@ -26,7 +26,7 @@ int main ()
     int i=0;
     int iSum=0;
 
-    printf("Enter the how many elements you want?\n");
+    printf("Enter the how many elements you want?");
     scanf("%d\n",&iSize);
     
     Arr = (int *)malloc(iSize*sizeof(int));//dynamic memory allocation using malloc
@@ -37,7 +37,7 @@ int main ()
     {
         scanf("%d",&Arr[i]);
     }
-    for(i=0;i<iSize;i++)
+    for(i=0;i<iSize;i++)c
     {
         iSum=iSum + Arr[i];
     }
