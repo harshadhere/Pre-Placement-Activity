@@ -26,27 +26,15 @@ class Array
         cout<<"Array is :\n";
         for(int i =0;i<Size;i++)
         {
-            cout<<Arr[i]<<"\n";
+            cout<<Arr[i];
         }
     }
 };
 int main()
 {
-    Array <char>obj1(5);
+    Array <int>obj1(5);
     obj1.Accept();
     obj1.Display();
-
-    Array <float>obj2(5);
-    obj2.Accept();
-    obj2.Display();
-
-    Array <double>obj3(5);
-    obj3.Accept();
-    obj3.Display();
-
-    Array <int>obj4(5);
-    obj4.Accept();
-    obj4.Display();
 
     return 0;
 }
