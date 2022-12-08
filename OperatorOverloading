@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class Demo
+{
+public:
+    int A,B;
+   
+    Demo(int i=0,int k=0)
+    {
+     A=i;
+     B=k;
+
+    }
+};
+Demo operator +(Demo obj1,Demo obj2)
+{
+
+}
+
+int main()
+{
+
+    Demo ans(0,0);
+      Demo x(10,20);
+      Demo y(20,40);
+      ans =a+b;
+    return 0;
+}
