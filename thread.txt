@@ -1,0 +1,21 @@
+//After creating the thread class object we call the start method 
+  //that method will internally call run method when the thread sheduler shedules our thread .
+  //when the thread gets sheduled and how much time qauntom gets allocated for the thread is not predictable 
+  //if our application contains multiple thread then the thread exucution order is purelly depends on the thread sheduler
+  //if we want to suspend the execution of a current thread for specific time intervel then we call sleep method
+  //if we want to suspend the execution of application till any of the specific thread complete its task then we call join method
+  //consider the below lifecycle of thread  
+  //thread life cycle 
+  //new start runnale running waiting dead
+
+States of THreads
+
+//NEW = when we create the object of thread class using new keyword 
+our thread object goes into new state
+//Runnable =When we call the start() method using the thread class
+object the thread goes into runnable 
+//RUnning = when the thread sheduler shedules our thread the thread goes into the running state
+(run methods gets called the
+//Waiting = in this state sheduled as well as it is running but due to 
+some reason the execution of thread gets stoped (sleep method)
+//dead = the execution of thread gets stop resourse gets deallocated

@@ -1,0 +1,21 @@
+Array, LinkedList, Stack, and Queue both are linear data structures.
+
+
+
+
+
+
+
+
+Array:											      Linked List : 
+
+1. Derived Datatype					                   	      Linear Data structure
+
+2. Single Dimensions And MultiDimention are the types 				Singly and DOunbly are the types of Linked List
+
+3. At the time of creation fixed size of memory gets allocated			There is no Specific memory allocation in the Begining
+
+4. Memory Wastage and Memory Shortage are the issues					There is no issue of memory wastage and memory shortage
+
+5. We cant insert and remove any element from the array 				We Can insert or we can remove the element from the linked list
+

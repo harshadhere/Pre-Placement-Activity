@@ -8,8 +8,7 @@
      {
          System.out.println("client application is running");
  
-         
-         Socket s = new Socket("localhost",2100);
+         Socket s = new Socket("localhost",4000);
          System.out.println("Client is waiting for server to accept the request");
  
 

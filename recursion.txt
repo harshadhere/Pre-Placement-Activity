@@ -1,0 +1,7 @@
+In this topic instead of using the iterative approach, we use the recursive approach
+
+-In case of recursion we have to call the function from the same Function itself
+
+-As Compare to the iteration recursion is heavy as every recursion is heavy for every recursion call we need separate stack frame
+
+-We can solve every problem statement which contains the loop by using the recursive approach

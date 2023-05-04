@@ -7,7 +7,7 @@ public class Server
     {
         System.out.println("Server application is running");
 
-        ServerSocket ss = new ServerSocket(2100);
+        ServerSocket ss = new ServerSocket(4000);
         System.out.println("Server is running at port 2100 and waiting for the client request");
 
 

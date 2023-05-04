@@ -11,18 +11,13 @@ int Addition(int iValue1,int iValue2)
 
 int main()
 {
-    auto int iNo1;
+    auto int iNo1=10;
     
-    auto int iNo2;
+    auto int iNo2=11;
 
     auto int iAns=0;
-    printf("ENter the number first :\n");
-    scanf("%d",&iNo1);
-    printf("ENter the number second :\n");
-    scanf("%d",&iNo2);
-
 
     iAns=Addition(iNo1,iNo2);
 
-    printf("Addition is:%d\n",iAns);
+    printf("Addition is:%d\n",Ans);
 }

@@ -1,0 +1,7 @@
+In this, we perform operations on File.
+
+Programatically we can create a new file, write the data into the file, read the data from the file and delete the existing file.
+
+To perform these operations we are going to use system calls from c or c++ programming.
+
+

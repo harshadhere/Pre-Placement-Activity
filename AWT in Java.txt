@@ -1,0 +1,170 @@
+Consider the below application which uses the concept of window listner
+GUI3.java
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class GUI3
+{
+       public static void main(String[] args) 
+       {
+           MarvellousFrame mobj = new MarvellousFrame("Marvellous PPA41");
+
+       }
+}
+class MarvellousFrame  {
+
+    public MarvellousFrame(String title)
+     {   
+        Frame fobj = new Frame(title);
+
+        fobj.setSize(500,500);
+
+        fobj.setVisible(true);
+
+        fobj.addWindowListener(new MarvellousListner());
+        
+   
+      }
+}
+class MarvellousListner implements WindowListener
+{
+   public void windowDeactivated(WindowEvent obj){};
+   public void windowActivated(WindowEvent obj1){}; 
+   public void windowDeiconified(WindowEvent obj2){};
+   public void windowIconified(WindowEvent obj3){};
+   public void windowClosed(WindowEvent obj4){};
+   public void windowClosing(WindowEvent obj5){
+    System.exit(0);
+   };
+   public void windowOpened(WindowEvent obj6){};
+
+}
+
+
+
+In the above applicatio we create a frame without any components in it.
+We add one listener to that frame named as marvellousListener M
+MarvellousListener implements WindowListener interface inside a window listner there are seven abstract methods.
+From that seven methods the window closing method gets automatically called when we click the close button 
+
+
+\\\\\\
+Adaptor Class :
+Consider the below application which uses the concept of WindowAdaptor class 
+example : GUI4.java
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class GUI4
+{
+       public static void main(String[] args) 
+       {
+           MarvellousFrame mobj = new MarvellousFrame("Marvellous PPA41");
+
+       }
+}
+class MarvellousFrame  {
+
+    public MarvellousFrame(String title)
+     {   
+        Frame fobj = new Frame(title);
+
+        fobj.setSize(500,500);
+
+        fobj.setVisible(true);
+
+        fobj.addWindowListener(new MarvellousListner());
+        
+   
+      }
+}
+class MarvellousListner extends WindowAdapter
+{
+ 
+   public void windowClosing(WindowEvent obj5){
+    System.exit(0);
+   } 
+  
+
+}
+
+In the below application we extends WindowAdapter class which contains all default implemented methods(seven) from the interface
+Due to this we have to provide the logic in only such a method which is required.
+
+
+//////////
+There are two ways in which we can perform GUI programing
+
+1] Using AWT package and
+2] Using Swing package .
+
+All the classes which are available in awt package are also available in swing package 
+if we add capital J before the name of class it is considered as a Swing class.
+
+TO use the component of swing class 
+
+We have to import javax.swing package
+import javax.swing.*;
+import java.awt.event.*;
+
+public class GUI5
+{
+       public static void main(String[] args) 
+       {
+           MarvellousFrame mobj = new MarvellousFrame("Marvellous PPA41");
+
+       }
+}
+class MarvellousFrame  {
+
+    public MarvellousFrame(String title)
+     {   
+        JFrame fobj = new JFrame(title);
+
+        fobj.setSize(500,500);
+
+        fobj.setVisible(true);
+
+        fobj.addWindowListener(new MarvellousListner());
+        
+   
+      }
+}
+class MarvellousListner extends WindowAdapter
+{
+ 
+   public void windowClosing(WindowEvent obj5){
+    System.exit(0);
+   } 
+  
+
+}
+
+
+  /////////////////////
+
+
+
+//////////////////////////////////////////
+Event deligate model in java
+
+::::::::::::::::::::::
+Event deligate model is considered as a model which indicates 
+the action has to be taken by our program when the end user intereacts with the component 
+In this event deligation model we have to learn the processure from the event generation to the event handling 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

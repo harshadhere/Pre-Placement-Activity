@@ -1,0 +1,94 @@
+consider the below application 
+ 
+
+
+
+in the above application, we have to import the desired packages like javax.Servlet;, javax.servlet.http;
+
+to create the servlet application we have to design one class that extends Httpservlet class 
+
+Inside HttpServlet class there is one method named as DOGET() which gets AUtoMAticALLY called when the client sends the request to the server.
+
+this do get method has two parameters as request and response 
+
+The request parameter contains the data requested by the client and the response parameter is empty 
+
+
+Inside the logic of our application, we have to feel the data inside the response object 
+
+the response obect should contain such data which is understandable by the client that is html
+
+consider the below example of the client-server architecture 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SERVLET LIFECYCLE 
+
+Step 1: The client sends the request to a server (Apache) Inside the server our servlet application is running.(Testing Servlet.Java)
+
+         Inside a server, there is a web container(TOM CAT) which is responsible to execute .class file of our java application(TestingServlet.class)
+
+     
+ 
+Step 2: After getting the request from the client the web container creates two objects as request and response. 
+
+	   Currently request object contains the request and the response object is empty 
+
+Step 3: After getting the request from the client the  server will create one thread and call the method named as doget() or service
+
+Step 4: After getting the request the doGet() method will fill the data inside the response object.
+
+	  as the response object is used by the client and the client contains the web browser and the web browser only understand the html,the response object should contain the data in html format
+
+Step 5: After completing the execution the web container receives the response object which contains the data which has to be forwarded to the client 
+
+Step 6: Now the Web container sends the response object to the client using the http protocol
+
+	 After sending the response to the thread and request, the response object gets deleted as our server completes one request 
+
+
+
+////////////////////////////
+
+SERVLET PROJECT STRUCTURE
+
+
+Consider the below structure of the servlet application that we have to create on the server side 
+
+
+Consider the below diagram which demonstrates the project structure of the servlet.
+
+We have to form the below project structure manually as 
+
+
+In the above diagram is the name of the project.
+
+The SRC folder contains the source code of our application 
+
+Inside the web-INF folder, we have to create a project dependency file web.xml and the classes folder will contain the .class file of the servlet application
+
+Consider the below file structure of the XML file and its mapping 
+xml.mapping.php 
+
+The previous explanation is for the cojncept servlet in servlet we write html syntax inside the java syntax 
+
+There is one old concept in java named as JSP which contains java SYntax inside the html syntax
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

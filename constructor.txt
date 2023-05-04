@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+ 
+ class Demo
+ {
+    public;
+    int no1;
+    int no2;
+      
+         Demo()
+         {
+            no1=0;
+            no2=0;
+         }
+
+    void fun()
+    {
+        cout<<"inside fun";
+
+    }
+    void gun()
+    {
+        cout<<"inside gun";
+    };}
+    int main()
+    {
+        Demo obj1;
+
+        cout<<"value of no1 of obj1:"<<obj1.no1"\n;
+        cout<<"value of no2 of obj1:"<<obj1.no2"\n;
+        obj1.fun();
+        obj.gun();
+
+    }
+
+ 

@@ -1,0 +1,231 @@
+LinkedList : 
+ 
+
+It is to store homogenous elements.
+
+internally implemented as a Doubly linked list.
+
+It provides the facilities for the manipulation of data...
+
+import java.util.*;
+
+
+class Book {
+    public String Name;
+    public int Prize;
+
+    public Book(String s,int i)
+    {
+        this.Name = s;
+        this.Prize= i;
+
+    }
+    public void display()
+    {
+        System.out.println("BOOK Name : "+this.Name+" Prize : "+this.Prize);
+    }
+
+    
+}
+class Collection3
+{
+     public static void main(String str[])
+     {
+        LinkedList<Book> lobj = new LinkedList<Book>();
+        Book bobj1 =  new Book("Let us C",400);
+        Book bobj2 =  new Book("C programing",789);
+        Book bobj3  =  new Book("C++ Programing",2343);
+        Book bobj4 = new Book("Angular java",3545);
+        Book bobj5  = new Book("Data structure",8989);
+
+        lobj.add(bobj1);
+        lobj.add(bobj2);
+        lobj.add(bobj3);
+        lobj.add(bobj4);
+        lobj.add(bobj5);
+
+        Iterator iobj = lobj.iterator();
+        Book bref = null;
+        
+        System.out.println("Elements of linked list are : ");
+        while(iobj.hasNext())
+        {
+            bref = (Book)iobj.next();
+            bref.display();
+        }
+        lobj.clear();
+     }
+}
+///////////////////////
+
+ArrayList :
+
+It is internally implemented as a dynamic array.
+
+It provides Fewer facilities as compared to the linked list.
+
+Data accessing in the ArrayList is fast because it is internally implemented as an Array.
+
+The above data structures provide similar facilities but there is a difference in the functionality 
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Collection5{
+
+    public static void main(String arg[])
+    {
+        ArrayList <Float>aobj = new ArrayList<Float>();
+
+
+
+        aobj.add(20.4f);
+        aobj.add(34.4f);
+        aobj.add(30.2f);
+        aobj.add(40.2f);
+
+//////////////////////////////////////
+
+Vector :
+
+It is almost similar to ArrayList.
+
+It is also implemented as a dynamic array.
+
+The vector class is synchronized in nature whereas the ArrayList whereas ArrayList is non-synchronized 
+
+////////////////////////////////////
+
+
+ import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Vector;
+
+public class Collection6{
+
+    public static void main(String arg[])
+    {
+        Vector <Float>aobj = new Vector<Float>();
+
+
+
+        aobj.add(20.4f);
+        aobj.add(34.4f);
+        aobj.add(30.2f);
+        aobj.add(40.2f);
+      
+      
+        aobj.add(1,85.5f);
+
+       
+
+        Iterator iobj = aobj.iterator();
+
+       
+        System.out.println("Elements are : ");
+         
+        while(iobj.hasNext())
+        {
+            System.out.println(iobj.next());
+        }
+
+        System.out.println("Elements are : "+aobj.clone());
+
+        System.out.println("capacity of stack are : "+aobj.capacity());
+        
+
+        aobj.clear();
+
+    }
+    
+}
+
+
+////////////////////////////
+
+
+
+Stack :
+In a stack data structure to insert the elements, we can use push and pop methods 
+
+PUSH Methode insert an element at the end of the stack 
+
+The POP method will remove the topmost element from the task.
+
+///////////////////////////////////
+COde: 
+import java.util.Stack;
+
+public class Collection7 {
+    public static void main(String args[])
+    {
+        Stack<Character> sobj = new Stack<Character>();
+
+        sobj.push('s');
+        sobj.push('u');
+        sobj.push('r');
+        sobj.push('a');
+        sobj.push('j');
+        sobj.push('c');
+        System.out.println("Elements of stack are : "+sobj);
+
+        System.out.println("Elements of stack are : "+sobj.push());
+
+
+    }
+}
+
+
+/////////////////////////////
+
+Hash Table :
+
+Hashtable is non linear data structure which contains two colunms as key and values
+
+It is one of the fastest data structure which can be used for Searching purpose
+
+For the SEARCHING pupose we have to provide the key as a input and it will returns it corresponding value
+
+Hash table class is Synchronized (thread safe) 
+
+HashMap :
+
+THis datastructure is almost same as hash table 
+
+Hash map is NON synchronized where as hash table is synchronized
+
+
+//////////////////////////////////
+import java.util.Enumeration;
+import java.util.Hashtable;
+
+public class Collectiion8 {
+    public static void main(String args[])
+    {
+        Hashtable <String,Integer>hobj = new Hashtable<String,Integer>();
+
+        hobj.put("PPA",18000);
+        hobj.put("LB",17000);
+        hobj.put("Python",16500);
+        hobj.put("LSP",21000);
+
+        Enumeration eobj = hobj.keys();
+        hobj.remove("LB");
+            
+
+        System.out.println(hobj.get("Python"));
+
+        while(eobj.hasMoreElements())
+        {
+            System.out.println("Data is :"+eobj.nextElement());
+        }
+    
+
+    }
+}
+
+//////////////////
+
+
+ 
+
